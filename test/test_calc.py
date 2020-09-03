@@ -8,11 +8,15 @@ def instance():
 
 
 def test_sum(instance):
-    assert instance.sum(1, 2) == 3
+    instance.primeiro = 1
+    instance.segundo = 2
+    assert instance.sum() == 3
 
 
 def test_div(instance):
-    assert instance.div(3, 2) == 1.5
+    instance.primeiro = 3
+    instance.segundo = 2
+    assert instance.div() == 1.5
 
 
 # def test_div_zero(instance):

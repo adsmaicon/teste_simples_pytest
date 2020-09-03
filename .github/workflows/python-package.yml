@@ -19,7 +19,11 @@ jobs:
       uses: actions/setup-python@master
       with:
         python-version: 3.7
-    - name: Generate coverage report
+    - name: Testes Unitarios
       run: |
         pip install pytest
         pytest
+    - name: BDD
+      run: |
+        pip install behave
+        behave
