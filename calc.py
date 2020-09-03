@@ -1,10 +1,13 @@
 
-
 class Calculadora:
 
-    def sum(self, a, b):
-        return a + b
+    def __init__(self):
+        self.primeiro = None
+        self.segundo = None
 
-    def div(self, a , b):
-        return a / b
+    def sum(self):
+        return self.primeiro + self.segundo
+
+    def div(self):
+        return self.primeiro / self.segundo
         
